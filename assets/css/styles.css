@@ -69,7 +69,7 @@ a {
     display: flex;
     flex-direction: column;
     background: #e6f0ff;
-    height: 736px;
+    height: calc(100vh - 90px);
 }
 
 .navbar {
@@ -313,7 +313,8 @@ a {
 
 .featured .list {
     margin-top: 70px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -581,7 +582,7 @@ a {
 }
 
 .footer .row-top {
-    gap: 185px;
+    column-gap: 185px;
 }
 
 .footer .heading {
