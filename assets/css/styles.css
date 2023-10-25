@@ -9,6 +9,7 @@
 html,
 body {
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 html {
@@ -23,13 +24,25 @@ body {
 /* Common */
 .content {
     width: 1110px;
-    max-width: calc(100% - 48px);
+    max-width: calc(100% - 40px);
     margin-left: auto;
     margin-right: auto;
 }
 
 a {
     text-decoration: none;
+}
+
+a,
+input,
+textarea,
+select,
+button,
+article {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn {
@@ -194,7 +207,7 @@ a {
 /* ========== Guides ========= */
 .guides {
     margin-top: 40px;
-    padding: 93px 0 79px;
+    padding: 93px 0 120px;
 }
 
 .guides .sub-title {
@@ -274,7 +287,6 @@ a {
 /* ========== Featured ========= */
 .featured {
     padding: 110px 0;
-    margin-top: 41px;
     background: #f5fafe;
 }
 
